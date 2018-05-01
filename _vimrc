@@ -2,21 +2,21 @@ set nocompatible
 filetype off
 
 set rtp+=~/dotfiles/vimfiles/vundle.git/
-call vundle#begin()
-
-  Plugin 'scrooloose/nerdtree'
-  Plugin 'tpope/vim-rails'
-  Plugin 'tpope/vim-endwise'
-  Plugin 'nathanaelkane/vim-indent-guides'
-  let g:indent_guides_enable_on_vim_startup = 1
-  Plugin 'bronson/vim-trailing-whitespace'
-  Plugin 'godlygeek/tabular'
-  Plugin 'plasticboy/vim-markdown'
-  Plugin 'slim-template/vim-slim'
-  Plugin 'simeji/winresizer'
-
-call vundle#end()
-filetype plugin indent on
+"call vundle#begin()
+"
+"  Plugin 'scrooloose/nerdtree'
+"  Plugin 'tpope/vim-rails'
+"  Plugin 'tpope/vim-endwise'
+"  Plugin 'nathanaelkane/vim-indent-guides'
+"  let g:indent_guides_enable_on_vim_startup = 1
+"  Plugin 'bronson/vim-trailing-whitespace'
+"  Plugin 'godlygeek/tabular'
+"  Plugin 'plasticboy/vim-markdown'
+"  Plugin 'slim-template/vim-slim'
+"  Plugin 'simeji/winresizer'
+"
+"call vundle#end()
+"filetype plugin indent on
 
 syntax on
 colorscheme molokai
@@ -70,9 +70,9 @@ imap <C-l> <Del>
 imap <C-b> <Left>
 imap <C-f> <Right>
 
-nnoremap <C-t> :NERDTree<CR>
-nnoremap <C-@> :vsplit<CR> :exe("tjump ".expand('<cword>'))<CR>
-nnoremap <C-^> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
+"nnoremap <C-t> :NERDTree<CR>
+"nnoremap <C-@> :vsplit<CR> :exe("tjump ".expand('<cword>'))<CR>
+"nnoremap <C-^> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap ss :split<CR>
 nnoremap sv :vsplit<CR>
 nnoremap <C-l> <Del>
@@ -81,7 +81,7 @@ nnoremap <C-m> '.
 nnoremap x "_x
 
 nnoremap ; :
-nnoremap : ;
+"nnoremap : ;
 
 nnoremap s <Nop>
 nnoremap q <Nop>
