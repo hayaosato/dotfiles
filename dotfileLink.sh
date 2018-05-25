@@ -1,10 +1,10 @@
 #!/bin/sh
-cd $(dirname $0); 
-#ln -sf .vimrc ~/.vimrc
-#ln -sf colors ~/.vim
-ln -sf utils ~/.vim
-#ln -sf .tmux.conf ~/.tmux.conf
-#ln -sf .zshrc ~/.zshrc
+#cd $(dirname $0);
+ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/utils ~/.vim
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/colors ~/.vim
 
 # vundle使う
 git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle

@@ -24,3 +24,4 @@ function Dkalisi()
   colorscheme kalisi
 endfunction
 
+syntax on
