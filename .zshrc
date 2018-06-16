@@ -37,3 +37,11 @@ function _ssh {
 }
 
 export WORDCHARS='*?_.[]~-=&;!#$%^(){}<>'
+
+eval "$(rbenv init -)"
+export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH"
+alias ctags="`brew --prefix`/bin/ctags"
+export PATH="$HOME/.pyenv/shims:$PATH"
+export PATH=/usr/local/mecab/bin:$PATH
+alias up="cd ../"
+export PATH="$HOME/.nodebrew/current/bin:$PATH"
