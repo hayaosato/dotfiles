@@ -7,4 +7,5 @@ call vundle#begin()
   "Bundle 'simeji/winresizer'
   Bundle 'szw/vim-tags'
   Bundle 'junegunn/seoul256.vim'
+  Bundle 'NLKNguyen/papercolor-theme'
 call vundle#end()

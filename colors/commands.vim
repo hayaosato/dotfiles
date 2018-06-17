@@ -38,4 +38,16 @@ function DSeoul256()
   color seoul256
 endfunction
 
+command WPaperColor call WPaperColor()
+function WPaperColor()
+  set background=light
+  colorscheme PaperColor
+endfunction
+
+command DPaperColor call DPaperColor()
+function DPaperColor()
+  set background=dark
+  colorscheme PaperColor
+endfunction
+
 syntax on
