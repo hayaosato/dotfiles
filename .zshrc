@@ -1,7 +1,6 @@
 
 # completion
-autoload -U compinit
-compinit
+autoload -Uz compinit && compinit -i
 
 setopt correct
 setopt nolistbeep
@@ -33,8 +32,22 @@ colors
 PROMPT='%m:%F{023}%c%f %n$ '
 
 function _ssh {
-    compadd `fgrep 'Host ' ~/.ssh/config | awk '{print $2}' | sort`;
+  compadd `fgrep 'Host ' ~/.ssh/config | awk '{print $2}' | sort`;
 }
+
+function _docker_attach() {
+  # if [ $1 = 'attach']; then
+  # _arguments \
+  #   {attach} \
+  #   '*: :_containers'
+  # fi
+  compadd `docker ps -a | grep -v CONTAINER | awk '{print $12}' | sort`
+}
+#   function _containers() {
+#     # compadd `docker ps -a | grep -v CONTAINER | awk '{print $12}' | sort`
+#     _values `docker ps -a | grep -v CONTAINER | awk '{print $12}' | sort`
+#   }
+
 
 export WORDCHARS='*?_.[]~-=&;!#$%^(){}<>'
 
